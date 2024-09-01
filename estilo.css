@@ -1,0 +1,95 @@
+*{box-sizing: border-box;}
+
+/* Usei Grid para diagramar o layout da página */
+body { 
+    display:grid;
+    grid-template-rows: auto auto minmax(65vh, auto) minmax(15vh, auto);
+    gap: 2px;
+    max-width: 100%;
+}
+header {
+    grid-row: 1 / 2;
+    background-color: #fefae0;
+}
+nav {
+    grid-row: 2 / 3;
+    background-color: #283618;
+}
+section {
+    grid-row: 3 / 4;
+    background-color: #fefae0;
+    padding: 10px;
+}
+footer {
+    grid-row: 4 / 5;
+    background-color: #dda15e;
+    padding: 10px;
+}
+
+/* Estiliza cabeçalho */
+h1 {
+    text-align:center;
+    color: #283618;
+}
+
+/* Criar menu horizontal */
+nav ul {
+    list-style-type:none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    float: left;
+}
+
+/* Estiliza menu horizontal e links da página portfólio */
+li a {
+    color: white;
+    background-color: #283618;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+}
+a:hover {background-color: #606c38}
+
+/* Apenas aumenta o texte de algums conteúdos */
+.destaque{ 
+    font-size: large;
+}
+
+/* Formata minha foto em 'Sobre mim' */
+.perfil {
+    width: 100px;
+    margin: 5px 0px 10px 0px;
+    padding: 2px;
+    border: 2px solid white;
+    border-radius: 50%;
+    float: left;
+}
+
+/* Formatação para ilutrações e suas referências */
+figure {
+    float: left;
+    width: auto;
+    text-align: center;
+    font-size: smaller;
+}
+
+/* Outras formatações simples */
+ul {
+    float:left;
+    list-style-type:circle;
+}
+
+p {
+    text-align:justify;
+    clear:left;
+}
+
+th{
+    text-align: left;
+}

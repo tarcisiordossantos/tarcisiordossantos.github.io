@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação</title>
+    <link rel="stylesheet" href="/estilo.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Portfólio Pessoal<br>Tarcísio Ribeiro dos Santos</h1>
+    </header>
+    <!-- Menu de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="/index.html" target="_self">Sobre mim</a></li>
+            <li><a href="/formacao.html" target="_self">Formação</a></li>
+            <li><a href="/portfolio.html" target="_self">Portfólio</a></li>
+            <li><a href="/contato.html" target="_self">Contato</a></li>
+        </ul>
+    </nav>
+    <!-- Conteúdo da Página -->
+    <section>
+        <h3>Formação:</h3>
+        <div class="destaque">
+            <ul>
+                <li>Cursando Tecnologia em Análise e Desenvolvimento de Sistema</li>
+                <br>
+                <li>Cursos:
+                    <br>
+                    <ul>
+                        <li>Informática</li>
+                        <li>Hardware, Montagem e Manutenção de Computadores</li>
+                        <li>Redes de Computadores</li>
+                    </ul>
+                </li>
+                <br>
+            </ul>
+        </div>
+        <figure><!-- Ilustração da página e sua referência -->
+            <img src="/img/conceito-cms-de-design-plano-ilustrado.png" alt="ilustração de um monitor com vários ícones relacionados a Web na cor predominante azul" style="width:500px">
+            <figcaption><a href="https://br.freepik.com/vetores-gratis/conceito-cms-de-design-plano-ilustrado_11754543.htm#fromView=search&page=1&position=8&uuid=5ca8856f-98ee-47b8-aa61-3cfffa989cc2">Imagem de freepik</a></figcaption>
+        </figure>
+    </section>
+    <footer> <!-- Optei por deixar o formulário para contato em todas páginas -->
+        <form method="post" action="arquivoNaoCriado.php">
+            <table>
+                <tr>
+                    <th><label for="nome">Nome:</label></th>
+                    <td><input type="text" name="nome" id="nome" style="width:360px" placeholder="Digite seu nome"></td>
+                </tr>
+                <tr>
+                    <th><label for="email">E-mail:</label></th>
+                    <td><input type="email" name="email" id="email" style="width:360px" placeholder="Digite seu e-mail"></td>
+                </tr>
+                <tr>
+                    <th><label for="mensagem">Mensagem:</label></th>
+                    <td><textarea name="mensagem" id="mensagem" rows="5" cols="50" placeholder="Digite sua mensagem"></textarea></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td><input type="submit" value="enviar"></td>
+                </tr>
+            </table>
+        </form>
+        <p style="text-align: center;">Página desenvolvida para fins acadêmicos.</p>
+    </footer>
+</body>
+</html>
